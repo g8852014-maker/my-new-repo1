@@ -1,54 +1,9 @@
-# my-new-repo1
+# 每日圖卡產線
 
-> 一句話描述這個專案在做什麼。
+這個儲存庫只做一件事：讓 Claude 的雲端排程任務有地方讀取圖卡技能。
 
-## 簡介
+- `.claude/skills/` 底下是四個技能：`daily-three-pack`（社群三套件）、`daily-subscription-four-pack`（訂閱四套件）、`daily-av-two-pack`（影音雙套件）、`single-feature-card`（單篇精選卡）。
+- 排程任務執行時會複製這個儲存庫，從 Notion「每日報告」讀資料、做成 9:16 圖卡，再歸檔到 Notion「每日圖卡」。
+- 圖卡本身不會存進這裡；執行產生的檔案都是暫時的。
 
-說明這個專案的目的、要解決的問題，以及主要功能。
-
-## 功能
-
-- 功能一
-- 功能二
-- 功能三
-
-## 快速開始
-
-### 環境需求
-
-- 列出需要的工具與版本（例如 Node.js 20+、Python 3.11+）
-
-### 安裝
-
-```bash
-git clone https://github.com/g8852014-maker/my-new-repo1.git
-cd my-new-repo1
-```
-
-### 使用方式
-
-```bash
-# 在這裡放執行專案的指令
-```
-
-## 專案結構
-
-```
-my-new-repo1/
-├── README.md
-└── .gitignore
-```
-
-## 貢獻
-
-歡迎提出 Issue 或 Pull Request。
-
-1. Fork 這個 repo
-2. 建立新分支：`git checkout -b feature/your-feature`
-3. 提交變更：`git commit -m "Add your feature"`
-4. 推送分支：`git push origin feature/your-feature`
-5. 開一個 Pull Request
-
-## 授權
-
-尚未指定授權條款。
+要調整版型或規則，改對應的 `SKILL.md` 即可，下一次執行就會生效。
